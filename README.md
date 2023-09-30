@@ -18,11 +18,11 @@ python main.py
 ### Arch. 1: Only LM
 I choose `bert-base-uncased` as the pretrained model to do this task.  
 
-### Arch. 2: DeBERTa + BiGRU + CRF
-I have no time to finish, sad.
+### ~~Arch. 2: DeBERTa + BiGRU + CRF~~
+I have no time to finish, so sad.
 
-#### Potential Problems
-1. Tokenizer ValueError
+#### ~~Potential Problems~~
+~~1. Tokenizer ValueError~~
 ```
 ValueError: Couldn't instantiate the backend tokenizer from one of: 
 (1) a `tokenizers` library serialization file, 
@@ -31,31 +31,31 @@ ValueError: Couldn't instantiate the backend tokenizer from one of:
 You need to have sentencepiece installed to convert a slow tokenizer to a fast one.
 ```
 
-Solution: Install sentencepiece
+~~Solution: Install sentencepiece~~
 ```
 pip install sentencepiece
 ```
 
-> Reference: [PegasusTokenizer requires the SentencePiece library but it was not found in your environment · Issue #8963 · huggingface/transformers](https://github.com/huggingface/transformers/issues/8963)
+> ~~Reference: [PegasusTokenizer requires the SentencePiece library but it was not found in your environment · Issue #8963 · huggingface/transformers](https://github.com/huggingface/transformers/issues/8963)~~
 
-2. Tokenizer ImportError
+~~2. Tokenizer ImportError~~
 ```
 DebertaV2Converter requires the protobuf library but it was not found in your environment. Checkout the instructions on the
 installation page of its repo: https://github.com/protocolbuffers/protobuf/tree/master/python#installation and follow the ones
 that match your environment. Please note that you may need to restart your runtime after installation.
 ```
 
-Solution: Install protobuf
+~~Solution: Install protobuf~~
 ```
 pip install protobuf
 ```
 
-> Reference: [Protobuf · Issue #10020 · huggingface/transformers](https://github.com/huggingface/transformers/issues/10020)
+> ~~Reference: [Protobuf · Issue #10020 · huggingface/transformers](https://github.com/huggingface/transformers/issues/10020)~~
 
 ## Evaluation
 I calculate the `Micro` and `Macro` `Precision`, `Recall`, `F1-score` through the `seqeval` module to evalute the model performance.
 
-## Experiments
+## Experiment
 ### Environment
 ```
 Python Modules Info:
