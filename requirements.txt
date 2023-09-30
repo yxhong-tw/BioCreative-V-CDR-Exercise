@@ -1,0 +1,5 @@
+numpy
+seqeval
+tabulate
+torch
+transformers
